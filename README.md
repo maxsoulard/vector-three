@@ -10,7 +10,7 @@ const vector = new Vector3(x, y, z);
 
 ## Documentation
 ```
-vector.add(v)
+vector.add(v) // v is a JS object with x, y and z components
 ```
 Returns a new Vector by adding v to this.
 ```
