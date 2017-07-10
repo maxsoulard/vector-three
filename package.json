@@ -1,5 +1,5 @@
 {
-  "name": "vector3",
+  "name": "vector-three",
   "version": "0.1.0",
   "description": "Mini javascript library to perform common operations on 3D vectors.",
   "scripts": {

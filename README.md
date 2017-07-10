@@ -1,10 +1,10 @@
-# Vector3
+# Vector-three
 Mini javascript library to perform common operations on 3D vectors.
 ```
-npm install vector3
+npm install vector-three
 ```
 ```
-const Vector3 = require('vector3');
+const Vector3 = require('vector-three');
 const vector = new Vector3(x, y, z);
 ```
 
