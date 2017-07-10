@@ -1,5 +1,5 @@
 # Vector3
-
+Mini javascript library to perform common operations on 3D vectors.
 ```
 npm install vector3
 ```
