@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/maxsoulard/vector3.git"
+    "url": "git://github.com/maxsoulard/vector-three.git"
   },
   "author": "Maxime Soulard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maxsoulard/vector3/issues"
+    "url": "https://github.com/maxsoulard/vector-three/issues"
   },
-  "homepage": "https://github.com/maxsoulard/vector3#readme",
+  "homepage": "https://github.com/maxsoulard/vector-three#readme",
   "dependencies": {
     "chai": "^4.0.2",
     "mocha": "^3.4.2"
