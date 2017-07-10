@@ -52,7 +52,7 @@ function multiplyTwoVectors(done) {
     const vec1 = new Vector3(10, 10, 10), vec2 = new Vector3(10, 10, 10);
     const expected = {x: 100, y: 100, z: 100};
     // ACT
-    const result = vec1.multiply(vec2);
+    const result = vec1.dot(vec2);
     // ASSERT
     expect(returnCoordinatesObject(result)).to.deep.equal(expected);
     done();
