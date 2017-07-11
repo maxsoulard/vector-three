@@ -27,6 +27,11 @@ vector.dotProduct(v)
 ```
 Returns the dot product (or scalar product) of this to v.
 ```
+vector.scale(scalar)
+// this.x * scalar + this.y * scalar + this.z * scalar
+```
+Returns a new Vector scaled : multiply this vector by a scalar
+```
 vector.crossProduct(v)
 // (x = this.y * v.z - this.z * v.y, y = this.z * v.x - this.x * v.z, z = this.x * v.y - this.y * v.x)
 ```

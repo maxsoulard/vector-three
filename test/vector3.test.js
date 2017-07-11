@@ -7,6 +7,7 @@ describe('Vector3', function() {
   it('should add two vectors and returns a new vector : {x: 20, y: 20, z: 20}', addTwoVectors);
   it('should sub two vectors Vector3(10, 10, 10) and Vector3(10, 10, 10), returns a new vector : {x: 0, y: 0, z: 0}', subTwoVectors);
   it('should multiply two vectors Vector(10, 10, 10) and Vector(10, 10, 10), returns a new vector : {x: 100, y: 100, z: 100}', multiplyTwoVectors);
+  it('should multiply this vector(3, 7, 10) by a scalar (3), returns a new vector : {x: 9, y: 21, z: 30}', scaleVector);
   it('should cross product two vectors Vector3(10, 15, 25) and Vector3(20, 25, 35), returns a new vector : {x: -100, y: 150, z: -50}', crossProductTwoVectors);
   it('should dot product two vectors Vector3(10, 15, 25) and Vector3(20, 25, 35), returns a dot product : the result is 1450 (x: 10 * 10 = 200 + y: 15 * 25 = 375 + z: 25 * 35 = 875)', dotProductTwoVectors);
   it('should calculate norm (or length) of a Vector3 (45, 10, 20) = ~50', normOfAVector);
@@ -53,6 +54,17 @@ function multiplyTwoVectors(done) {
     const expected = {x: 100, y: 100, z: 100};
     // ACT
     const result = vec1.dot(vec2);
+    // ASSERT
+    expect(returnCoordinatesObject(result)).to.deep.equal(expected);
+    done();
+}
+
+function scaleVector(done) {
+    // ARRANGE
+    const vec1 = new Vector3(3, 7, 10);
+    const expected = {x: 9, y: 21, z: 30};
+    // ACT
+    const result = vec1.scale(3);
     // ASSERT
     expect(returnCoordinatesObject(result)).to.deep.equal(expected);
     done();
