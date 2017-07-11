@@ -1,6 +1,6 @@
 {
   "name": "vector-three",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Mini javascript library to perform common operations on 3D vectors.",
   "scripts": {
     "test": "mocha"
