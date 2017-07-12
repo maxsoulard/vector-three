@@ -43,6 +43,7 @@ Returns the norm (or vector length) of this Vector.
 vector.normalize()
 ```
 Returns a new unit Vector, which norm is 1.
+### Static methods
 ```javascript
 Vector3.angleBetween(v1, v2)
 ```
@@ -52,3 +53,11 @@ Call Vector3.angleBetween(v1, v2).toDegrees() to get the angle value in degrees.
 Vector3.fromObject(o)
 ```
 Returns a new Vector from a JS object : {x: x, y: y, z: z}
+## Build
+```javascript
+npm install
+```
+Run tests using mocha :
+```javascript
+npm test
+```
